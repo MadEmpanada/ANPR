@@ -1,5 +1,6 @@
 #### Video Demo:  <https://youtu.be/rlNcfBMK1lc>
-#### Description: This project is an object detection program oriented mainly for cars, which uses the YOLOV10 from Ultralitycs. The later is one of the so-called state-of-the-art real-time object detection and segmentation models. At least it is one of the top 3 at the current time, based on speed and accuracy for computer vision object detection models. 
+#### Description:
+This project is an object detection program oriented mainly for cars, which uses the YOLOV10 from Ultralitycs. The later is one of the so-called state-of-the-art real-time object detection and segmentation models. At least it is one of the top 3 at the current time, based on speed and accuracy for computer vision object detection models. 
 
 This program has three main steps: obtaining path to video file, detecting and labelling cars in real time, and saving the results as an output MP4 file. The first one is accomplished by the `arguments()` function. `arguments()` gets the path to the video file in which the real-time detections are going to be made. For this, the user must provide a commnad-line-argument for the name of the video file. To get the file path, use of the `argparse` library was made.
 
