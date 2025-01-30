@@ -1,4 +1,4 @@
-# Live car object detection using YOLOV8
+# Live car object detection using YOLOV10
 #### Video Demo:  <https://youtu.be/rlNcfBMK1lc>
 #### Description:
 This project is an object detection program oriented mainly for cars, which uses the YOLOV10 from Ultralitycs. The later is one of the so-called state-of-the-art real-time object detection and segmentation models. At least it is one of the top 3 at the current time, based on speed and accuracy for computer vision object detection models. 
@@ -11,7 +11,7 @@ These are, filtetered exclusively by `class id` to get only car detections. Afte
 The last step is performed by `output_detection()`, which takes as input the list of the edited frames, and the height and width of the frames. Finally, with the `cv2` library every frame is used in a loop to create the video with the arguments previously mentioned and a default fps of 30, which can be changed using this open-source code of the program. 
 
 ### Is this project in the final phase?
-Short answer: no. Actually, the first attempt to come out with this project was directed towards identifying license plate numbers implementing an OCR component to the program and a YOLOV8 model trained with a custom dataset already labelled with more than 10 k license plate images. However, I did not notice that the even the lightest and more optimized version of the YOLOV8 model, which is the YOLOV8N needed so many resources to be trained. And yes, this is not a confusion, I purposedly try to implement the license plate recognition program with the V8 model since the dataset was only available for this version of YOLO. 
+Short answer: no. Actually, the first attempt to come out with this project was directed towards identifying license plate numbers implementing an OCR component to the program and a YOLOV10 model trained with a custom dataset already labelled with more than 10 k license plate images. However, I did not notice that the even the lightest and more optimized version of the YOLOV10 model, which is the YOLOV10N needed so many resources to be trained. And yes, this is not a confusion, I purposedly try to implement the license plate recognition program with the V10 model since the dataset was only available for this version of YOLO. 
 
 I did my research on the parameters that are of most relevance and found out that training should be carried with 300 epochs at least, just to obtain robust results. However, my current computational resources only allowed me to train this model for 1 day which basically allowed me to train the model for 1 epoch. Of course, the detections were not anywhere near of a decent project to show. This was the call for me to maybe try a base implementation of that idea, which was the reason this project is published in the current version. 
 
